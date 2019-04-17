@@ -1,4 +1,4 @@
-# Css
+# Css Cheatsheet
 
 ## Property Shorthands:
 Almost all Css properties have shorthands for the four directions... It can accept 4, 3, 2 or 1 parameters.
@@ -12,7 +12,7 @@ The directions are changind clockwise. Example:
 
 By setting the property margin to auto, the browser will center the element inside it's container, by all the directions.
 
-## Margin Collapse
+## Margin Collapse:
 
 Top and Bottom margins are merged into a single one, equal to the largest of the both.
 Example: 
@@ -22,3 +22,20 @@ Example:
 ```  
    The margin between the elements will be equal to 50px, because of the collapse.
 
+## Padding:
+
+Padding stands for an element internal margin, or between it's border. However, if you set a padding on an element who has a defined size, the padding will add up on it's size (width or height). Example:
+
+```  
+elm {
+  width: 300px;
+  padding: 25px;
+}
+Total width = 325px.
+```  
+
+To solve this problem, we can use box-sizing property:
+
+```  
+  box-sizing: border-box;
+```  
