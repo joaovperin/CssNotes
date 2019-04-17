@@ -3,10 +3,13 @@
 ## Property Shorthands:
 Almost all Css properties have shorthands for the four directions... It can accept 4, 3, 2 or 1 parameters.
 The directions are changind clockwise. Example:
-4 params = top right bottom left
-3 params = top (right left) bottom
-2 params = (top bottom) (right left)
-1 params = (top right bottom left)
+
+```
+  4 params = top right bottom left
+  3 params = top (right left) bottom
+  2 params = (top bottom) (right left)
+  1 params = (top right bottom left)
+```
 
 ## Auto Margin property:
 
@@ -27,11 +30,11 @@ Example:
 Padding stands for an element internal margin, or between it's border. However, if you set a padding on an element who has a defined size, the padding will add up on it's size (width or height). Example:
 
 ```  
-elm {
-  width: 300px;
-  padding: 25px;
-}
-Total width = 325px.
+  elm {
+    width: 300px;
+    padding: 25px;
+  }
+  Total width = 325px.
 ```  
 
 To solve this problem, we can use box-sizing property:
