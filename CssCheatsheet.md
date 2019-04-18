@@ -42,3 +42,18 @@ To solve this problem, we can use box-sizing property:
 ```  
   box-sizing: border-box;
 ```  
+
+## Fonts:
+ Always set Fallback generic fonts, as the example:
+```   
+ "Lucida Sans Unicode", "Lucida Grande", sans-serif
+```   
+ It's not a good practice to set the size with Pixels, cause it will be fixed no matter what's the font size configured with the browser. It can be tricky for users with visual disabilites to read then. If you want it to be resizable, use EM units. The default font size for browsers are 16px, and 1em = fontSize in pixels. So, 1em = 16pixels by default. To calculate the appropriate size, just use the formula:
+ ```  
+  Size(em) = Size(px) / 16
+ ```  
+ Another trick is to use VW units, which stands for "Viewport Width". With that, the font size will be resized with the size of the window. Example:
+ ```
+  font-size:10vw
+  ```
+It means to use 10% of the viewport width
